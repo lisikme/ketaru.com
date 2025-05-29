@@ -1,2 +1,2 @@
 # Сайт проекта
-Сайт: https://ketaru.com
+Сайт: https://ketame.ru
