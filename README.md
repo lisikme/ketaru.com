@@ -1,2 +1,2 @@
 # Сайт проекта
-Сайт: https://ketame.ru
+Сайт: https://krcorp.ru
