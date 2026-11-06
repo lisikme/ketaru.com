@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="yandex-verification" content="2d8c1dcb18ad48b7"/>
-    <meta property='og:'>
+    <meta name="yandex-verification" content="2d8c1dcb18ad48b7">
     <meta property="og:title" content="KetaRu | Информация">
     <meta property="og:site_name" content="KetaRu">
     <meta property="og:url" content="https://krcorp.ru">
@@ -12,307 +11,113 @@
     <meta property="og:image" content="./icon.png">
     <meta property="og:image:width" content="900">
     <meta property="og:image:height" content="900">
+    <meta name="author" content="KetaruCorp">
+    <meta name="description" content="KetaruCorp - этот проект был создан разработчиком lisik.me">
+    <meta name="keywords" content="ketarucorp, ketarudev, ketaru, moreka, fist89, golive, fascor89, lisichka">
+    <meta name="theme-color" content="#000000">
 
     <title>Ketaru | Информация</title>
     <link rel="shortcut icon" href="./icon.png">
-    <meta name="theme-color" content="#151c24">
-    <meta name="author" content="KetaruCorp">
-    <meta name="description" content="KetaruCorp - Этот проект был создан разработчиком Lisichka#5502"/>
-    <meta name="keywords" content="ketarucorp, ketarudev, ketaru, moreka, fist89, golive, fascor89, lisichka">
-    <link rel="stylesheet" href="./head.css">
-    <script>
-        function NewTab(target){
-            var options={
-                height: 820, // устанавливает высоту окна в пикселях.
-                width: 680, // устанавливает ширину окна в пикселях.
-                toolbar: 0, // определяет, отображается ли панель инструментов (включая кнопки вперед и назад) {1 (ДА) или 0 (НЕТ)}.
-                scrollbars: 0, // определяет, появятся ли полосы прокрутки в окне {1 (ДА) или 0 (НЕТ)}.
-                status: 0, // отображается ли строка состояния внизу окна {1 (ДА) или 0 (НЕТ)}.
-                resizable: 0, // можно ли изменить размер окна {1 (ДА) или 0 (НЕТ)}. Также может быть перегружен с помощью resizable.
-                left: (screen.width-680)/2, // левое положение при появлении окна.
-                top: (screen.height-890)/2, // верхнее положение при появлении окна.
-                center: 1, // мы должны центрировать окно? {1 (ДА) или 0 (НЕТ)}. переопределяет верхний и левый
-                createnew: 0, // должны ли мы создавать новое окно для каждого события {1 (ДА) или 0 (НЕТ)}.
-                location: 0, // определяет, отображается ли адресная строка {1 (ДА) или 0 (НЕТ)}.
-                menubar: 0 // определяет, отображается ли строка меню {1 (ДА) или 0 (НЕТ)}.
-            };
-            var parameters = "location="+options.location+",menubar="+options.menubar+",height="+options.height+",width="+options.width+",toolbar="+options.toolbar+",scrollbars="+options.scrollbars+",status="+options.status+",resizable="+options.resizable+",left="+options.left+",screenX="+options.left+",top="+options.top+",screenY="+options.top;
-            var target
-            window.open(target, 'popup', parameters)
-        }
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="./css/ketame.css?v=3">
 </head>
-<body id="site-bg">
+<body>
     <header id="site-header">
-        <type id="page-name">Информация</type>
         <div id="site-header-box">
-            <a href="https://krcorp.ru">
-                <div id="site-logo-box"><img id="site-logo-img" src="https://krcorp.ru/corp.png">
-                <name id="site-logo-name">Ketaru <span style="color: #ffef5b">Corp</span></name></div></a>
+            <a id="site-logo-link" href="https://krcorp.ru" target="_blank" rel="noopener noreferrer">
+                <div id="site-logo-box2">
+                    <img id="site-logo-img" src="https://krcorp.ru/corp.png" alt="KR Corp">
+                    <name id="site-logo-name2">
+                        <div id="tesx2">
+                            <span id="ketaru2">KR</span>
+                            <span id="corp2">Corp</span>
+                        </div>
+                    <span id="ketame-by">by kelix.me</span>
+                    </name>
+                </div>
+            </a>
+            <type id="page-name">
+                <span id="namm">KetaRu</span>
+                <span class="kt-sub">Информация</span>
+            </type>
+            <span id="rel">BETA</span>
         </div>
     </header>
-    <main>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-            * {
-                font-family: "Rubik", sans-serif;
-            }
-            body, html{
-                padding: 0 !important;
-                margin: 0 !important;
-            }
-            #projects-panel {
-                background: #131416;
-                padding: 10px;
-                gap: 5px;
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: row;
-                justify-content: center;
-            }
-            #btn-block {
-                background: #27272a;
-                border: 1px solid #323337;
-                display: flex;
-                gap: 7px;
-                width: 250px;
-                padding: 5px;
-                transition: all 0.3s ease;
-                flex-direction: row;
-            }
-            #btn-block:hover {
-                background: #1b1c1d;
-            }
-            #btn-info {
-                display: flex;
-                line-height: 100%;
-                flex-direction: column;
-                font-size: 16px;
-                justify-content: space-between;
-            }
-            #btn-tags {
-                font-size: 12px;
-                font-weight: 500;
-                border-radius: 3px;
-                background: #ffffff2c;
-                color: #93c3ff;
-                display: flex;
-                padding: 0px 10px;
-            }
-            #btn-title {
-                font-size: 18px;
-                font-weight: 600;
-                display: flex;
-                padding: 2px 0px;
-            }
-            #pjimg {
-                border-radius: 5px;
-                border: 0;
-                height: 40px;
-                width: 40px;
-            }
-        </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-        * {
-            font-family: "Rubik", sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background: #0a0a0c;
-            color: #ffffff;
-            padding: 20px;
-        }
 
-        #btn-block {
-            background: linear-gradient(145deg, #2a2a30, #232329);
-            border: 1px solid #3a3a40;
-            display: flex;
-            gap: 12px;
-            width: 280px;
-            padding: 10px;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            flex-direction: row;
-            border-radius: 5px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-        #btn-block::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-            transition: left 0.6s ease;
-        }
-        #btn-block:hover {
-            /* transform: translateY(-5px) scale(1.02); */
-            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
-            border-color: #4a4a50;
-            background: linear-gradient(145deg, #2d2d34, #26262c);
-        }
-        #btn-block:hover::before {
-            left: 100%;
-        }
-        #btn-block:active {
-            transform: translateY(-2px) scale(1.01);
-        }
-        #btn-info {
-            display: flex;
-            line-height: 100%;
-            flex-direction: column;
-            font-size: 16px;
-            justify-content: space-between;
-            /* gap: 8px; */
-        }
-        #btn-tags {
-            font-size: 12px;
-            font-weight: 500;
-            border-radius: 6px;
-            background: rgba(255,255,255,0.08);
-            color: #ff8484;
-            display: inline-flex;
-            padding: 2px 12px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        #btn-title {
-            font-size: 18px;
-            font-weight: 600;
-            display: flex;
-            padding: 2px 0px;
-            color: #ffffff;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-        }
-        #pjimg {
-            border-radius: 8px;
-            border: 0;
-            height: 45px;
-            width: 45px;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        #btn-block:hover #pjimg {
-            transform: rotate(5deg) scale(1.1);
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-    </style>
-        <div id="projects-block">Полезные ссылки
-            <div id="projects-panel">
-                <a href="./profile/lisikme" target="_self">
-                    <div id="btn-block">
-                        <img id="pjimg" src="./avatar.gif">
-                        <div id="btn-info">
-                            <div id="btn-title">Kelix.me</div>
-                            <div id="btn-tags">Профиль разработчика</div>
-                        </div>
+    <main class="kt-wrap">
+        <section class="kt-hero">
+            <h1 class="kt-title">KetaRu</h1>
+            <p class="kt-sub">Проекты, полезные ссылки и сервисы команды KetaruCorp.</p>
+        </section>
+
+        <section class="kt-card">
+            <div class="kt-card__head">Полезные ссылки</div>
+            <div class="kt-grid">
+                <a class="kt-tile" href="./profile/lisikme" target="_self">
+                    <img class="kt-tile__img" src="./avatar.gif" alt="Kelix.me">
+                    <div class="kt-tile__info">
+                        <div class="kt-tile__title">Kelix.me</div>
+                        <div class="kt-tile__tag">Профиль разработчика</div>
                     </div>
                 </a>
-                <a href="./join" target="_self">
-                    <div id="btn-block">
-                        <img id="pjimg" src="./corp.png">
-                        <div id="btn-info">
-                            <div id="btn-title">KetaruCorp</div>
-                            <div id="btn-tags">Сервер поддержки</div>
-                        </div>
+                <a class="kt-tile" href="./join" target="_self">
+                    <img class="kt-tile__img" src="./corp.png" alt="KetaruCorp">
+                    <div class="kt-tile__info">
+                        <div class="kt-tile__title">KetaruCorp</div>
+                        <div class="kt-tile__tag">Сервер поддержки</div>
                     </div>
                 </a>
             </div>
-        </div>
-        <div id="projects-block">Наши проекты
-            <div id="projects-panel">
-                <a href="https://live.krcorp.ru" target="_self">
-                    <div id="btn-block">
-                        <img id="pjimg" src="./apps/img/rk.png">
-                        <div id="btn-info">
-                            <div id="btn-title">KetaMeFM</div>
-                            <div id="btn-tags">Discord + приложение</div>
-                        </div>
+        </section>
+
+        <section class="kt-card">
+            <div class="kt-card__head">Наши проекты</div>
+            <div class="kt-grid">
+                <a class="kt-tile" href="https://live.krcorp.ru" target="_blank" rel="noopener noreferrer">
+                    <img class="kt-tile__img" src="./apps/img/rk.png" alt="KetaMeFM">
+                    <div class="kt-tile__info">
+                        <div class="kt-tile__title">KetaMeFM</div>
+                        <div class="kt-tile__tag">Discord + приложение</div>
                     </div>
                 </a>
-                <a href="https://kino.krcorp.ru" target="_self">
-                    <div id="btn-block">
-                        <img id="pjimg" src="./apps/img/none.gif">
-                        <div id="btn-info">
-                            <div id="btn-title">КиноОнлайн</div>
-                            <div id="btn-tags">Каталог фильмов</div>
-                        </div>
+                <a class="kt-tile" href="https://kino.krcorp.ru" target="_blank" rel="noopener noreferrer">
+                    <img class="kt-tile__img" src="./apps/img/none.gif" alt="КиноОнлайн">
+                    <div class="kt-tile__info">
+                        <div class="kt-tile__title">КиноОнлайн</div>
+                        <div class="kt-tile__tag">Каталог фильмов</div>
                     </div>
                 </a>
-                <a href="https://kenso.krcorp.ru" target="_self">
-                    <div id="btn-block">
-                        <img id="pjimg" src="https://github.com/lisikme/Nixware-allowed/blob/main/iconfull.png?raw=true">
-                        <div id="btn-info">
-                            <div id="btn-title">KensoUltra</div>
-                            <div id="btn-tags">LUA скрипт для Nixware</div>
-                        </div>
+                <a class="kt-tile" href="https://kenso.krcorp.ru" target="_blank" rel="noopener noreferrer">
+                    <img class="kt-tile__img" src="https://github.com/lisikme/Nixware-allowed/blob/main/iconfull.png?raw=true" alt="KensoUltra">
+                    <div class="kt-tile__info">
+                        <div class="kt-tile__title">KensoUltra</div>
+                        <div class="kt-tile__tag">LUA скрипт для Nixware</div>
                     </div>
                 </a>
-                <a href="https://bisklive.krcorp.ru" target="_self">
-                    <div id="btn-block">
-                        <img id="pjimg" src="https://bisklive.krcorp.ru/logo-mini.png">
-                        <div id="btn-info">
-                            <div id="btn-title">Bisk-Live</div>
-                            <div id="btn-tags">Радиостанция</div>
-                        </div>
+                <a class="kt-tile" href="https://bisklive.krcorp.ru" target="_blank" rel="noopener noreferrer">
+                    <img class="kt-tile__img" src="https://bisklive.krcorp.ru/logo-mini.png" alt="Bisk-Live">
+                    <div class="kt-tile__info">
+                        <div class="kt-tile__title">Bisk-Live</div>
+                        <div class="kt-tile__tag">Радиостанция</div>
                     </div>
                 </a>
             </div>
-        </div>
+        </section>
     </main>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
+        })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+        ym(93762745, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/93762745" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </body>
-</html>
-
-
-<br><br><br><br><br><br><div>
-    
-    
-    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(93762745, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/93762745" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-    <!-- Форматирование -->
-    <!DOCTYPE html>
-    <html lang="ru" class="no-js">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <head>
-            <meta charset="utf-8">
-            <meta name="yandex-verification" content="2d8c1dcb18ad48b7"/>
-<!-- Интеграция Embed -->
-<title>KetaRu | Информация</title>
-<meta property="og:title" content="KetaRu | Информация">
-<meta property="og:site_name" content="KetaRu">
-<meta property="og:url" content="https://krcorp.ru">
-<meta property="og:description" content="KetaruDev - Этот сайт создан разработчиком lisik.me">
-<link rel="shortcut icon" href="./icon.png">
-<meta property="og:image" content="./icon.png">
-<meta property="og:image:width" content="900">
-<meta property="og:image:height" content="900">
-<meta name="theme-color" content="#26ade9">
-
-<meta name="title" content="KetaRu | Информация">
-<meta name="description" content="KetaruDev - Этот сайт создан разработчиком Lisichka#5502"/>
-<meta name="keywords" content="KetaruDev, KetaruDev, KetaRu, moreka, fist89, golive, fascor89, lisichka">
-
-<!-- CSS -->
-<link rel="stylesheet" href="css/Page.css">        <!-- Дизайн фона сайта --> 
-<link rel="stylesheet" href="css/ScrollBar.css">   <!-- Полоса прокрутки -->
-<link rel="stylesheet" href="css/Animation.css">   <!-- Анимации -->
-
-
-<!-- JavasCript -->
-<script src="index.js"></script>
-
-<!--LiveInternet counter-->
-<script>
-    (function(d,s){d.getElementById("licntFE24").src="https://counter.yadro.ru/hit?t18.1;r"+escape(d.referrer)+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)
-</script>
-</div>
 </html>
